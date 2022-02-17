@@ -2,6 +2,7 @@ package StepDef;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import Global.BaseClass;
@@ -24,8 +25,11 @@ public class ApiDemos extends BaseClass {
 
     @Then("Showing menu Accessibility node provider")
     public void showingMenuAccessibilityNodeProvider() {
+        String result = driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Accessibility Node Provider\"]")).getText();
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Accessibility Node Provider\"]")).isDisplayed();
-        System.out.println("Passed, Accessibility node provider is displayed");
+        Assert.assertEquals("Accessibility Node Provider",result);
+        System.out.println(result);
+        System.out.println("Passed, "+result+" is displayed");
         closeApps();
     }
 }

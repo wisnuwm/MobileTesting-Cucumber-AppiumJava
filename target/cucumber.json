@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-02-17T09:13:40.280Z",
+        "line": 2,
+        "name": "Accessibility",
+        "description": "",
+        "id": "api-demos-test;accessibility",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9332213000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "Open application",
+            "match": {
+              "location": "StepDef.ApiDemos.openApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1931626000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Click Accessibility",
+            "match": {
+              "location": "StepDef.ApiDemos.clickAccessibility()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 387442000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Showing menu Accessibility node provider",
+            "match": {
+              "location": "StepDef.ApiDemos.showingMenuAccessibilityNodeProvider()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Api Demos Test",
+    "description": "",
+    "id": "api-demos-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/ApiDemos.feature",
+    "tags": []
+  }
+]

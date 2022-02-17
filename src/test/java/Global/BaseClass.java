@@ -24,7 +24,8 @@ public class BaseClass {
         return cap;
     }
     public static void openApps() throws Exception {
-        driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), initDevice());
+        String appiumServerURL = "http://127.0.0.1:4723/wd/hub";
+        driver = new AppiumDriver(new URL(appiumServerURL), initDevice());
         System.out.println("Apps started...");
     }
     public static void closeApps(){
